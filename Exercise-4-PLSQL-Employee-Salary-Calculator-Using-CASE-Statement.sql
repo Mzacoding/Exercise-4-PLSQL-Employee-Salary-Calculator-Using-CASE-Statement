@@ -27,7 +27,7 @@ WHEN  employee_hours_worked BETWEEN 1 AND 40 THEN
 (NORMAL_HOURS*regular_hourly_rate)
 
 WHEN  employee_hours_worked BETWEEN 41 AND 50 THEN
--- Calculate employee_gross_salary  
+-- Calculate employee_gross_salary   s
 (NORMAL_HOURS*regular_hourly_rate) +((employee_hours_worked-NORMAL_HOURS)*(regular_hourly_rate*1.5))   
 
 ELSE 
